@@ -35,6 +35,7 @@ while True:
             number = int(input("Enter a To-do list number to complete: "))
             todos.pop(number - 1)
         case 'exit':
+
             break
 print ('bye')
 
