@@ -32,7 +32,7 @@ while True:
             """
             file = open('Todo.txt','r')
             todos = file.readlines()
-            file.close()
+            file.close() 
             """
             with open("Todo.txt",'r')  as file:
                 todos = file.readlines()
