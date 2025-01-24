@@ -3,6 +3,7 @@ while True:
     user_action = user_action.strip()
 
     if 'add' in user_action:
+
         #todo = input ("Enter a To-do : ") + "\n"
         # this code lines are for writing text in to the text files in traditional way
         """""
