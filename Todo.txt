@@ -1,1 +1,4 @@
 joy
+clean
+wash
+dry
