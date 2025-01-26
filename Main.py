@@ -1,7 +1,11 @@
-def get_todos():
-    with open ( "Todo.txt", 'r' ) as file_local :
+def get_todos(filepath):
+    with open ( filepath, 'r' ) as file_local :
         todos_local = file_local.readlines ()
     return todos_local
+
+def write_todos(filepath, todos_arg):
+    with open(filepath, 'w') as file:
+        file.writelines(todos_arg)
 
 
 while True:
@@ -20,7 +24,7 @@ while True:
         # Below code is the modified version of the above traditional code which is error free
         todo = "\n" + user_action[4:]
 
-        todos = get_todos()
+        todos = get_todos("Todo.txt")
 
         todos.append(todo)
         #this code lines are for writing text in to the text files in traditional way
@@ -30,8 +34,7 @@ while True:
         file.close()
         """
         # Below code is the modified version of the above traditional code which is error free
-        with open('Todo.txt','w') as file:
-            file.writelines(todos)
+        write_todos("Todo.txt",todos)
 
     elif user_action.startswith("show"):
         """
@@ -39,7 +42,7 @@ while True:
         todos = file.readlines()
         file.close() 
         """
-        todos = get_todos ()
+        todos = get_todos ("Todo.txt")
 
         for index,x in enumerate(todos):
             x= x.capitalize()
@@ -51,13 +54,12 @@ while True:
             number  = int(user_action[5:])
             new_number = number -1
 
-            todos = get_todos()
+            todos = get_todos("Todo.txt")
 
             new_todo= input("enter your new To-do: ")
             todos[new_number]=new_todo + "\n"
 
-            with open("Todo.txt",'w') as file:
-                file.writelines(todos)
+            write_todos("Todo.txt",todos)
         except ValueError:
             print("Enter a valid number to edit.")
             continue
@@ -66,17 +68,16 @@ while True:
         try:
             number = int(user_action[9:])
 
-            todos = get_todos()
+            todos = get_todos("Todo.txt")
 
             index = number -1
             Item_to_remove = todos[index].strip()
 
             todos.pop(index)
 
-            with open("Todo.txt",'w') as file:
-                file.writelines(todos)
+            write_todos("Todo.txt",todos)
 
-            message = f"Todo {Item_to_remove} is removed from the string"
+            message = f"Todo {Item_to_remove} is completed."
             print(message)
         except IndexError:
             print("enter a valid number.")
