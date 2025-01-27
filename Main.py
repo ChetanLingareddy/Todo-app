@@ -16,7 +16,6 @@ while True:
 
     if user_action.startswith("add"):
 
-        #todo = input ("Enter a To-do : ") + "\n"
         """This code lines are for writing text in to the text files in traditional way"""
         """
         file = open('Todo.txt','r')
