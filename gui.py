@@ -13,6 +13,7 @@ window = Sg.Window( 'My To-do App',
 while True:
     events, values =window.read()
     match events:
+
         case "Add":
             todos = functions.get_todos()
             new_todo = values['todo'] + "\n"
