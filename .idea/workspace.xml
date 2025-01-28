@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f358af5d-ec5c-4f46-b869-b65b3430a61b" name="Changes" comment="initial code" />
+    <list default="true" id="f358af5d-ec5c-4f46-b869-b65b3430a61b" name="Changes" comment="Implemented Add button">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Todo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +22,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="b81d2cc57b815dd6e48ef70acbd566f1aad8875f" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -44,12 +53,19 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Python.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.gui.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/modules" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -178,7 +194,31 @@
       <option name="project" value="LOCAL" />
       <updated>1738012078835</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="created a simple gui without interactions">
+      <option name="closed" value="true" />
+      <created>1738037511888</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1738037511888</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Implemented Add button">
+      <option name="closed" value="true" />
+      <created>1738041685142</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1738041685142</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Implemented Add button">
+      <option name="closed" value="true" />
+      <created>1738043117714</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1738043117714</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -194,6 +234,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial code" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial code" />
+    <MESSAGE value="created a simple gui without interactions" />
+    <MESSAGE value="Implemented Add button" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented Add button" />
   </component>
 </project>
